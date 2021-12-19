@@ -42,6 +42,10 @@
     margin-bottom: 10px;
   }
   
+  .infos a:hover{
+    color: #e2ceff;
+  }
+
   .infos a img{
     max-height: 40px;
     max-width: 40px;
@@ -53,6 +57,7 @@
   
   .presentation{
     width: 59%;
+    padding: 4%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -62,6 +67,9 @@
     font-size: 32px;
     text-align: justify;
     text-justify: distribute;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: #e2ceff 3px solid;
+    border-radius: 15px;
   }
   
   .presentation p{

@@ -1,5 +1,6 @@
 import './App.css';
 import CartaoVisitas from './components/CartaoVisitas';
+import Certificados from './components/Certificados';
 import Header from './components/Header';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div>
       <Header />
       <CartaoVisitas />
-      <CartaoVisitas />
+      <Certificados />
     </div>
     
   );

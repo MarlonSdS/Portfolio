@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
 .header{
     width: 100%;
     height: 100px;
@@ -10,8 +16,9 @@
 }
 
 .item{
+    text-decoration: none;
     font-size: 40px;
-    width: 33%;
+    width: 33.33%;
     height: 100%;
     text-align: center;
     display: flex;
@@ -22,6 +29,7 @@
 }
 
 .item:hover{
+    transition: 0.7s;
     background-color: #dddae5;
     color: #bd93f9;
 }
