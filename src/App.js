@@ -9,6 +9,7 @@ function App() {
     <div>
       <Header />
       <CartaoVisitas />
+      <p className='subtitle'>Algumas certificações que possuo</p>
       <Certificados />
     </div>
     

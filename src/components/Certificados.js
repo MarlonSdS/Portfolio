@@ -1,28 +1,11 @@
 import '../styles/Certificados.css'
 import {useState} from 'react'
-
-
+//importando json com os dados dos certificados
+import listaCertificados from '../artifacts/listaC';
+const lista = listaCertificados
 
 function Certificados(){
-    const certificados = [
-        '/certificados/certificado-fabrica.png',
-        '/certificados/certificado-nodejs.png'
-    ]
-    const titulos = [
-        'Fábrica de Software',
-        'NodeJs'
-    ]
-
-    const description = [
-        `Este foi um projeto de extensão do qual eu participei
-        ainda na faculdade. Consistia em um grupo de alunos, orientados
-        por alguns professores, pegarem projetos de verdade para
-        desenvolver. Essa foi a minha primeira experiência prática.`,
-        `Curso formação NodeJs ministrado pelo professor Victor Lima
-        na plataforma Udemy. `
-    ]
-
-    const maxSize = certificados.length;
+    const maxSize = lista.images.length;
     var [position, setPosition] = useState(0);
     return(
         <div className='painel' id='ponto2'>
@@ -36,12 +19,12 @@ function Certificados(){
             }}>❮</button>
             <div className='visor'>
                 <div className='cert'>
-                    <img src={certificados[position]}/>
+                    <img src={lista.images[position]}/>
                 </div>
                 <div className='cert-infos'>
-                    <h1>{titulos[position]}</h1>
+                    <h1>{lista.titles[position]}</h1>
                     <h2>
-                        {description[position]}
+                        {lista.descriptions[position]}
                     </h2>
                 </div>
             </div>

@@ -65,7 +65,7 @@
     align-items: center;
     color: #dddae5;
     font-size: 32px;
-    text-align: justify;
+    text-align: justify !important;
     text-justify: distribute;
     background-color: rgba(0, 0, 0, 0.3);
     border: #e2ceff 3px solid;
