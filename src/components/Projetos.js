@@ -1,15 +1,15 @@
 import '../styles/Certificados.css'
 import {useState} from 'react'
-//importando json com os dados dos certificados
-import listaCertificados from '../artifacts/listaC';
-import {Painel, PassButton, Visor} from '../styleds/Gallery'
-const lista = listaCertificados
+import listaProjetos from '../artifacts/listaP'
 
-function Certificados(){
+import {Painel, PassButton, Visor} from '../styleds/Gallery'
+
+ const lista = listaProjetos
+function Projetos(){
     const maxSize = lista.images.length;
     var [position, setPosition] = useState(0);
     return(
-        <Painel id='ponto2'>
+        <Painel id='ponto3'>
             <PassButton onClick={() => {
                 if((position - 1) < 0){
                     setPosition(maxSize - 1)
@@ -41,8 +41,4 @@ function Certificados(){
     )
 }
 
-/*function nextItem(){
-    console.log('aa')
-}*/
-
-export default Certificados
+export default Projetos
