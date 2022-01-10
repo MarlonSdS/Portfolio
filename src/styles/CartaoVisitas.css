@@ -36,14 +36,15 @@
     justify-content: start;
     align-items: center;
     text-decoration: none;
-    color: #dddae5;
+    color: #f8f8f2;
     font-weight: bold;
     font-size: 22px;
     margin-bottom: 10px;
+    
   }
   
   .infos a:hover{
-    color: #e2ceff;
+    color: #6272a4;
   }
 
   .infos a img{
@@ -63,12 +64,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #dddae5;
+    color: #f8f8f2;
     font-size: 32px;
     text-align: justify !important;
     text-justify: distribute;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: #e2ceff 3px solid;
+    background: linear-gradient(#44475a,#282a36);
     border-radius: 15px;
   }
   

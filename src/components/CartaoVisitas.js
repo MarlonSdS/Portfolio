@@ -13,9 +13,10 @@ function CartaoVisitas() {
           </div>
         </div>
         <div className='presentation'>
-          <p>Olá! Eu sou o Marlon dos Santos! Sou um desenvolvedor iniciante recém formado no
+          <p>Olá! Eu sou o <span style={{color: '#6272a4'}}>Marlon dos Santos!</span> Sou um desenvolvedor iniciante recém formado no
             Centro Universitário Vale do Salgado em Icó-CE. Procuro me especializar em desenvolvimento
-             web. Atualmente desenvolvo principalmente em javascript com foco em node e react, inclusive 
+             web. Atualmente desenvolvo principalmente em javascript com foco em <span style={{color: '#f1fa8c'}}>node </span>
+              e <span style={{color: '#50fa7b'}}>react</span>, inclusive 
              esta página aqui foi feita com react. Te convido a continuar scrollando e conhecer minhas experiências
              e certificações.
           </p>

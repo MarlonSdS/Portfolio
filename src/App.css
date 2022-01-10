@@ -2,14 +2,18 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #30323e;
+  background-color: #282a36;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .subtitle{
-  color: #dddae5;
+  color: #f8f8f2;
   font-size: 34px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2%;
 }
+
+/* old color schemes
+  #4C566A
+*/
