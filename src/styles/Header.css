@@ -33,6 +33,17 @@
     background-color: rgba(255, 255, 255, 0.2);
     color: #9E73FD;
 }
+
+@media (max-width: 1000px) {
+    .item{
+        font-size: 2em;
+    }
+
+    .header{
+        height: 70px;
+    }
+}
+
 /* old color schemes
 #5E81AC
 */

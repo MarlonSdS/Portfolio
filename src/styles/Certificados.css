@@ -6,6 +6,7 @@
 .cert img{
     width: 100%;
     max-height: 600px;
+    border-radius: 4px;
     object-fit: cover;
     object-position: top;
 }
@@ -32,4 +33,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .cert{
+        width: 100%;
+    }
+    .cert img{
+        height: 320px;
+        object-fit: cover;
+    }
+    .cert-infos{
+        height: 50%;
+        width: 90%;
+    }
+
+    .cert-infos h1{
+        height: 10%;
+    }
+
+    .cert-infos h2{
+        height: 80%;
+    }
 }
