@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Header />
-      <CartaoVisitas />
+      <CartaoVisitas className='cv'/>
       <p className='subtitle'>Algumas certificações que possuo</p>
       <Certificados />
       <br/>

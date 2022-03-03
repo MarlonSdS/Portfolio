@@ -3,6 +3,7 @@ import {useState} from 'react'
 //importando json com os dados dos certificados
 import listaCertificados from '../artifacts/listaC';
 import {Painel, PassButton, Visor} from '../styleds/Gallery'
+import {FaCaretLeft, FaCaretRight} from 'react-icons/fa'
 const lista = listaCertificados
 
 function Certificados(){
@@ -17,7 +18,7 @@ function Certificados(){
                     setPosition(position - 1)
                     console.log(position)
                 }
-            }}>❮</PassButton>
+            }}><FaCaretLeft size={40} width={10}/></PassButton>
             <Visor>
                 <div className='cert'>
                         <img src={lista.images[position]}/>
@@ -36,7 +37,7 @@ function Certificados(){
                 setPosition(position + 1)
                 console.log(position)
             }
-           }}>❭</PassButton>
+           }}><FaCaretRight /></PassButton>
         </Painel>
     )
 }

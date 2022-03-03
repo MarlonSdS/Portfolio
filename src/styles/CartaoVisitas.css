@@ -1,10 +1,12 @@
 .main{
-    width: 90%;
+    width: 95%;
+    max-width: 1200px;
     margin: auto;
     padding-top: 7%;
     padding-bottom: 5%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
   }
   
   .foto{
@@ -13,7 +15,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 2%;
-    width: 26%;
+    width: 95%;
   }
   
   .foto .profpic{
@@ -30,7 +32,7 @@
   }
   
   .infos a{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -38,7 +40,7 @@
     text-decoration: none;
     color: #f8f8f2;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5em;
     margin-bottom: 10px;
     
   }
@@ -54,10 +56,11 @@
     align-items: center;
     align-content: center;
     padding-right: 8px;
+    color: white;
   }
   
   .presentation{
-    width: 59%;
+    width: 95%;
     padding: 4%;
     margin: auto;
     margin-top: 5%;
@@ -66,7 +69,7 @@
     justify-content: center;
     align-items: center;
     color: #f8f8f2;
-    font-size: 2.5em;
+    font-size: 2.2vw;
     text-align: justify !important;
     text-justify: distribute;
     background: linear-gradient(#44475a,#282a36);
@@ -76,19 +79,19 @@
   .presentation p{
     margin: 0;
   }
+
   
-@media (max-width:1000px) {
+@media only screen and (max-width:1000px) {
     .main{
-      width: 100%;
-      margin: 0%;
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: 1fr;
     }
 
     .foto{
+      margin: auto;
       display: flex;
       flex-direction: row;
-      width: 100%;
+      justify-content: space-around;
+      width: 80%;
       margin-top: 12%;
     }
 
@@ -97,7 +100,8 @@
     }
 
     .infos a{
-      font-size: 1.5em;
+      font-size: 1.1em;
+      margin-left: 8%;
     }
 
     .infos a img{
@@ -106,6 +110,8 @@
     }
 
     .presentation{
-      width: 90%;
+      width: 93%;
+      margin: auto;
+      font-size: 3vw;
     }
 }

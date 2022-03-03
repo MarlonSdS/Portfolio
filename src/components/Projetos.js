@@ -3,6 +3,7 @@ import {useState} from 'react'
 import listaProjetos from '../artifacts/listaP'
 
 import {Painel, PassButton, Visor} from '../styleds/Gallery'
+import {FaCaretLeft, FaCaretRight} from 'react-icons/fa'
 
  const lista = listaProjetos
 function Projetos(){
@@ -17,7 +18,7 @@ function Projetos(){
                     setPosition(position - 1)
                     console.log(position)
                 }
-            }}>❮</PassButton>
+            }}><FaCaretLeft /></PassButton>
             <Visor>
                 <div className='cert'>
                         <img src={lista.images[position]}/>
@@ -36,7 +37,7 @@ function Projetos(){
                 setPosition(position + 1)
                 console.log(position)
             }
-           }}>❭</PassButton>
+           }}><FaCaretRight /></PassButton>
         </Painel>
     )
 }

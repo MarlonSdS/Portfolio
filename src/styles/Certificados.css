@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.4em;
 }
 
 .cert-infos h2{
@@ -33,6 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2em;
 }
 
 @media (max-width: 1000px) {
@@ -45,7 +47,7 @@
     }
     .cert-infos{
         height: 50%;
-        width: 90%;
+        width: 95%;
     }
 
     .cert-infos h1{
