@@ -1,15 +1,23 @@
 const listaCertificados = {
     images: [
+        '/certificados/diploma.png',
         '/certificados/certificado-fabrica.png',
         '/certificados/certificado-nodejs.png',
-        '/certificados/certificado-react.jpg'
+        '/certificados/certificado-react.jpg',
+        '/certificados/certificado-django.png',
     ],
     titles: [
+        'Tecnólogo em Análise e Desenvolvimento de Sistemas',
         'Fábrica de Software',
         'NodeJs',
-        'ReactJs'
+        'ReactJs',
+        'Python Django',
     ],
     descriptions: [
+        `Curso de nível superior de análise e desenvolvimento de
+        sistemas com duração de três anos no Centro Universitário Vale
+        do Salgado (Univs), universidade pertecente ao grupo 
+        Unileão.`,
         `Este foi um projeto de extensão do qual eu participei
         ainda na faculdade. Consistia em um grupo de alunos, orientados
         por alguns professores, pegarem projetos de verdade para
@@ -23,7 +31,10 @@ const listaCertificados = {
         Matheus Fraga na plataforma Udemy. Tal como no curso de Node
         não aprendi apenas react mas também outras tecnologias como 
         redux e axios. Gostei bastante do react e espero começar minha 
-        carreira com ele.`
+        carreira com ele.`,
+        `Curso Python Django ministrado pela Geek University na 
+        plataforma Udemy. Tal como nos cursos anteriores não aprendi apenas 
+        django mas também outras tecnologias.`,
     ]
 }
 
