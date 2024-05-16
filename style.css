@@ -1,0 +1,58 @@
+/*VARIÁVEIS COM CORES*/
+:root{
+    --main-bg-color: #d5d6db;
+    --titles-color: #343b58;
+    --links: #33635c;
+    --plain-text: #565a6e;
+}
+
+.dark-mode:root{
+    --main-bg-color: #1a1b26;
+    --titles-color: #cfc9c2;
+    --links: #73daca;
+    --plain-text: #9aa5ce;
+}
+
+html{
+    background-color: var(--main-bg-color);
+}
+
+main{
+    margin:auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*PARTE DE APRESENTAÇÃO ONDE PONHO MINHA FOTO E ALGUMAS INFORMÇÃOES*/
+
+.present-infos{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding: 0;
+}
+
+.texto{
+    text-align: left;
+}
+
+.profpic{
+    width: 30%;
+    background-color: aqua;
+    margin:auto;
+    margin-right: 0%;
+}
+
+.subtittle{
+    color: var(--titles-color);
+}
+
+a{
+    color: var(--links);
+}
+
+p{
+    color: var(--plain-text);
+}
