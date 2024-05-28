@@ -7,7 +7,15 @@
     <title>Marlon Santos － Portfólio</title>
 </head>
 <body>
-    <input type="checkbox" name=" " id="toggle">
+    <div>
+        <input type="checkbox" class="toggler" id="toggler">
+        <label for="toggler" class="toggler-label">
+            <span class="ball">
+            </span> 
+            <i class="moon" id="moon">☾</i>
+            <i class="sun" id="sun">☀</i>
+        </label>
+    </div>
     <main>
         <h1 class="subtittle">Marlon Santana dos Santos</h1>
         <div class="present-infos">
@@ -17,30 +25,30 @@
                 <h2 class="subtittle">📍 Icó - CE</h2>
             </div>
             <div class="profpic">
-                <img src="" alt="">
+                <img src="./public/face.jpeg" alt="Marlon Santana dos Santos">
             </div>
             
         </div>
         <div class="presentation">
-            <p>Me chamo Marlon dos Santos, sou um desenvolvedor iniciante recém formado em
-                análise e desenvolvimento de sistemas. Nascí em Icó, no interior do Ceará e me formei na UniVS,
-                naquela mesma cidade. Estou procurando novas oportunidades para meu início de carreira, atualmente 
-                desenvolvo principalmente em javascript com foco em node e react e estou estudando Vue e PHP também,
-                inclusive esse site aqui foi feito com Vue. Te convido à conferir mais algumas informações, como 
-                meus trabalhos anteriores e minha formação, indo menu aí em cima.</p>
+            <p>Olá, chamo Marlon dos Santos, sou um desenvolvedor iniciante recém formado em
+                análise e desenvolvimento de sistemas. Nascí em Icó, no interior do Ceará e me 
+                formei na UniVS, naquela mesma cidade. Estou procurando novas oportunidades para
+                 meu início de carreira, atualmente 
+                desenvolvo principalmente em javascript com foco em node e Vue e estou estudando
+                 Python e C++ também. Te convido à conferir mais algumas informações, como 
+                meus trabalhos anteriores e minha formação, clicando nos links aqui em baixo.</p>
         </div>
-        <a href="">Meu diploma em pdf</a>
-        <p>abshjdbhajsbdjsahbdjdbjabjhbadadbaj</p>
+        
+        <div class="links">
+            <a href="./pages/contato.html">Informações de contato</a>
+            <a href="./public/curriculo.pdf" target="_blank">Currículo em PDF</a>
+            <a href="./pages/faculdade.html">Formação</a>
+            <a href="./pages/trabalho.html">Experiência profissional</a>
+            <a href="./pages/skils.html">Linguagens e skills</a>
+        </div>
 
     </main>
 
-    <script>
-        const $html = document.querySelector('html');
-        const $toggle = document.querySelector('#toggle');
-
-        $toggle.addEventListener('change', function(){
-            $html.classList.toggle('dark-mode')
-        })
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>

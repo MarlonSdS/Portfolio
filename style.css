@@ -8,22 +8,114 @@
 
 .dark-mode:root{
     --main-bg-color: #1a1b26;
-    --titles-color: #cfc9c2;
+    --titles-color: #a9b1d6;
     --links: #73daca;
     --plain-text: #9aa5ce;
 }
 
+/*CONFIGURAÇÕES GERAIS*/
+
 html{
     background-color: var(--main-bg-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main{
     margin:auto;
-    width: 50%;
+    width: 60%;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
+p{
+    color: var(--plain-text);
+    font-size: large;
+    font-weight: 549;
+    padding: 0;
+}
+
+h2{
+  font-size: larger;
+}
+
+h1{
+  font-size: x-large;
+}
+
+/*O TOGGLER LIGHT/DARK THEME*/
+
+.toggler {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .toggler-label {
+    background-color: var(--titles-color);
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .moon{
+
+    font-weight: 1000;
+    width: 50%;
+    font-size: x-large;
+    text-align: center;
+    color: var(--main-bg-color);
+    display: block;
+  }
+  
+  .sun {
+    width: 50%;
+    font-size: x-large;
+    text-align: center;
+    color: var(--main-bg-color);
+    display: block;
+  }
+  
+  .tohome{
+    background-color: var(--main-bg-color);
+    border: solid 2px var(--titles-color);
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    border-radius: 50%;
+    display: inline;
+
+    text-decoration: none;
+    text-align: center;
+    padding: 1px 10px;
+    color: var(--titles-color);
+    font-size: 2rem;
+    font-weight: 1000;
+  }
+
+  .toggler-label .ball {
+    background-color: var(--main-bg-color);
+    width: 50%;
+    height: 90%;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+    display: block;
+  }
+  
+  .toggler:checked + .toggler-label .ball {
+    transform: translateX(26.5px);
+  }
+  
+  
 
 /*PARTE DE APRESENTAÇÃO ONDE PONHO MINHA FOTO E ALGUMAS INFORMÇÃOES*/
 
@@ -39,20 +131,94 @@ main{
 }
 
 .profpic{
-    width: 30%;
-    background-color: aqua;
+    width: 20%;
     margin:auto;
     margin-right: 0%;
+}
+
+.profpic img{
+  width: 100%;
+  height: 100%;
+  border: var(--links) 2px solid;
+  border-radius: 10px;
 }
 
 .subtittle{
     color: var(--titles-color);
 }
 
-a{
-    color: var(--links);
+.presentation{
+    text-align: justify;
 }
 
-p{
-    color: var(--plain-text);
+/*A PARTE COM OS LINKS PARA SESSÕES COMO FORMAÇÃO, CURRÍCULO ETC*/
+
+.links{
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  row-gap: 5vh;
+  margin-top: 5vh;
+}
+
+.links a{
+  color: var(--links);
+  font-size: large;
+}
+
+/*Página de formação*/
+.landscape{
+  /*max-width: 75vw;*/
+  margin: 2% 10%;
+  border: var(--links) 2px solid;
+  border-radius: 10px;
+}
+
+/*Página de contatos*/
+.links p{
+  margin: 0;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.links .contato{
+  text-align: left !important;
+}
+
+/*TODA A PARTE DE SKILLS */
+.skill{
+  display: flex;
+  flex-direction: column;
+  
+  border: 2px solid var(--links);
+  border-radius: 15px;
+
+  margin-top: 2%;
+}
+
+.skill img{
+  width: 10%;
+  height: 100%;
+  max-width: 80px;
+  min-width: 80px;
+  border-radius: 10%;
+}
+
+.skill p{
+  margin-left: 2%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+
+}
+
+.row:hover{
+  cursor: pointer;
+}
+
+.stack-hidden{
+  display: none;
 }
